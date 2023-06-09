@@ -1,10 +1,11 @@
 import './App.css';
 import {React}  from 'react'
-import LoginApi from "./components/LoginApi";
+import { Counter } from './features/counter/Counter';
+
 function App() {
   return (
     <div>
-     <LoginApi/>
+     <Counter/>
     </div>
   );
 }

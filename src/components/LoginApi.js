@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import { connect } from 'react-redux';
 import { setApiKey } from '../store/actions/setApiKey';
@@ -21,3 +22,4 @@ const LoginApi = ({ apiKey, setApiKey }) => {
 
 
 export default LoginApi;
+*/
