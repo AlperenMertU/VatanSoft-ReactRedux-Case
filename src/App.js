@@ -1,11 +1,13 @@
 import './App.css';
 import {React}  from 'react'
-import { Counter } from './features/counter/Counter';
+import ApiKeyInput from './components/ApiKeyInput';
+import Deneme from './components/Deneme';
 
 function App() {
   return (
     <div>
-     <Counter/>
+    <ApiKeyInput/>
+     <Deneme/>
     </div>
   );
 }
