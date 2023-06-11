@@ -1,13 +1,17 @@
 import './App.css';
 import {React}  from 'react'
 import ApiKeyInput from './components/ApiKeyInput';
-import Deneme from './components/Deneme';
+import Harita from './components/Harita';
 
 function App() {
+   
   return (
     <div>
-    <ApiKeyInput/>
-     <Deneme/>
+    
+    <Harita/>
+
+      <ApiKeyInput/> 
+  
     </div>
   );
 }

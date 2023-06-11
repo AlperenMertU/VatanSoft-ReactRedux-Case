@@ -5,7 +5,7 @@ const initialState = {
 };
 
 const weatherSlice = createSlice({
-  name: 'weather',
+  name: 'hava',
   initialState,
   reducers: {
 
@@ -14,6 +14,7 @@ const weatherSlice = createSlice({
     }
 
   },
+  
 });
 
 export const { getApi } = weatherSlice.actions;
