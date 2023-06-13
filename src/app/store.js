@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import weatherReducer from '../features/weather/weatherSlice'
-import sayfaReducer from '../features/hideandseek/sayfaSlice';
+import sayfaReducer from '../features/showHide/sayfaSlice';
 
 export default configureStore({
   reducer: {

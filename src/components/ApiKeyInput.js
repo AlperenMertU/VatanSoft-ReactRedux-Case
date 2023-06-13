@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getApi } from "../features/weather/weatherSlice";
 import {lgn} from "../styles/login.css"
-import { getHide } from '../features/hideandseek/sayfaSlice';
+import { getHide } from '../features/showHide/sayfaSlice';
 
 const ApiKeyInput = () => {
   const [apiKey, setApiKey] = useState('');
