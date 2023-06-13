@@ -1,7 +1,18 @@
-.container{
-    text-align: center;
+.container {
+    background-image: url("../assets/bg.jpg"); /* Arka plan resmi */
+    background-size: cover; /* Resmi tam ekran boyutuna ölçekle */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px;
-   }
+    height: 100vh; /* Tam ekran yükseklik */
+  }
+
+  .login{
+    background-color: rgba(8, 0, 255, 0.314);
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  

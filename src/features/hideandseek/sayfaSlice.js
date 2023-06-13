@@ -1,23 +1,24 @@
-/*
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const sayfaSlice = createSlice({
-  name: 'sayfa',
+  name: 'hide',
   initialState: {
-    app: true,
+    key: false,
   },
   reducers: {
-    showSayfa1: (state) => {
-     return state.app = false;
+    getHide: (state) => {
+      state.key = true;
     },
   },
 });
 
-export const { showSayfa1 } = sayfaSlice.actions;
+export const { getHide } = sayfaSlice.actions;
 
 export default sayfaSlice.reducer;
-*/
+//sayfa yenildendiği zaman istmememeli apş yı bu yüzden true-false değerini local stroge desaklamak gerek 
 
+/*
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -36,7 +37,7 @@ const sayfaSlice = createSlice({
   },
   
 });
-
 export const { getHide } = sayfaSlice.actions;
 
 export default sayfaSlice.reducer;
+*/
