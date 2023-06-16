@@ -23,17 +23,17 @@ const ApiKeyInput = () => {
   console.log(apiKey);
 
   return (
-    <div className='container'>
+    <div className={login.container}>
 
       <div className='login'>
-        <h2>Size verilen hava durumu APİ keyini girmeniz lazım</h2>
+        <h2>Size verilen hava durumu APİ keyini girmeniz gerek!</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             value={apiKey}
             onChange={(e) => setApiKey(e.target.value)}
           />
-          <button type="submit">Save</button>
+          <button type="submit">TAMAM</button>
         </form>
       </div>
 

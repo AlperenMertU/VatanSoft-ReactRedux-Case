@@ -1,8 +1,25 @@
-.temp2{
-    display: block;
-}
-
-.wheatherElementz{
+.container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+  
+  .city {
+    margin-bottom: 20px;
+  }
+  
+  .weatherElemetz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .temp {
+    font-size: 24px;
+    margin-top: 10px;
+    color:rgb(5, 255, 9);
+
+  }
+  

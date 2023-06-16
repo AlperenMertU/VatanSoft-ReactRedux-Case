@@ -2,7 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Select from 'react-select'
-import {} from './styles/harita.module.css'
+import harita from './styles/harita.module.css'
+
 const Harita = () => {
   const weather = useSelector(state => state.hava.key);
   const [il, setIl] = useState(null);
@@ -112,23 +113,22 @@ const Harita = () => {
   if (ilDeger) {
     celsius = (ilDeger.main.temp - 273.15).toFixed(0)
   }
-  //tekrar apı girdikten sonra hata alıyorum. ama api gilirmişse ve şehir seçilmişse ahata lamıyorum bu sornu çöz
+
   return (
-    <div className='container'>
-      <div className='city'>
+    <div className={harita.container}>
+
+    <div className={harita.city}>
         <Select options={iller} onChange={(e) => setIl(e)} />
       </div>
 
-      <div className='weatherElementz'>
+      <div className={harita.weatherElemetz}>
+
         {ilDeger && (
-          <div className='temp'>
-          <p>sıcaklık:12313 {celsius}°C</p>
+          <div className={harita.temp}>
+          <p>{celsius}°C</p>
           </div>
         )}
 
-        <div className='temp2'>
-        <p>sıcaklık:12313°C</p>
-        </div>
 
       </div>
 
