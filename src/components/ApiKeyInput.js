@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getApi } from "../features/weather/weatherSlice";
-import {lgn} from "../styles/login.css"
+import login from "./styles/login.module.css"
 import { getHide } from '../features/showHide/sayfaSlice';
 
 const ApiKeyInput = () => {
+
+
+  
+
   const [apiKey, setApiKey] = useState('');
   const dispatch = useDispatch();
 

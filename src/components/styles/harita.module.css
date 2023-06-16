@@ -1,0 +1,8 @@
+.temp2{
+    display: block;
+}
+
+.wheatherElementz{
+    display: flex;
+    flex-direction: column;
+}
